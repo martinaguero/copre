@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<!-- Data source -->
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/copre" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+	</bean>
+
+
+	<!-- Repository Locator -->
+
+	<bean id="repositoryLocator" class="ar.com.trimatec.copre.repositories.RepositoryLocator"
+		factory-method="getInstance">
+		<property name="copreRepository">
+			<ref local="copreRepository" />
+		</property>
+		<property name="categoryRepository">
+			<ref local="categoryRepository" />
+		</property>
+		<property name="participantRepository">
+			<ref local="participantRepository" />
+		</property>
+		<property name="productRepository">
+			<ref local="productRepository" />
+		</property>
+		<property name="brandRepository">
+			<ref local="brandRepository" />
+		</property>
+		<property name="measureRepository">
+			<ref local="measureRepository" />
+		</property>
+		<property name="itemRepository">
+			<ref local="itemRepository" />
+		</property>
+		<property name="requirementRepository">
+			<ref local="requirementRepository" />
+		</property>
+		<property name="workflowRepository">
+			<ref local="workflowRepository" />
+		</property>
+		<property name="workflowNodeDescriptionRepository">
+			<ref local="workflowNodeDescriptionRepository" />
+		</property>
+		<property name="bidRepository">
+			<ref local="bidRepository" />
+		</property>
+		<property name="workflowNodeRepository">
+			<ref local="workflowNodeRepository" />
+		</property>
+	</bean>
+
+
+	<!-- Repositories -->
+
+	<bean id="copreRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateCopreRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="categoryRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateCategoryRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="participantRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateParticipantRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="productRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateProductRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="brandRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateBrandRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="measureRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateMeasureRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="itemRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateItemRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="requirementRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateRequirementRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="workflowRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateWorkflowRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="workflowNodeDescriptionRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateWorkflowNodeDescriptionRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="bidRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateBidRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="workflowNodeRepository"
+		class="ar.com.trimatec.copre.repositories.impl.hibernate.HibernateWorkflowNodeRepository">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<!-- Services -->
+
+	<bean id="baseServiceImpl" class="ar.com.trimatec.copre.services.impl.BaseServiceImpl"
+		abstract="true">
+		<property name="copreRepository">
+			<ref local="copreRepository" />
+		</property>
+		<property name="categoryRepository">
+			<ref local="categoryRepository" />
+		</property>
+		<property name="participantRepository">
+			<ref local="participantRepository" />
+		</property>
+		<property name="productRepository">
+			<ref local="productRepository" />
+		</property>
+		<property name="brandRepository">
+			<ref local="brandRepository" />
+		</property>
+		<property name="measureRepository">
+			<ref local="measureRepository" />
+		</property>
+		<property name="itemRepository">
+			<ref local="itemRepository" />
+		</property>
+		<property name="requirementRepository">
+			<ref local="requirementRepository" />
+		</property>
+		<property name="workflowRepository">
+			<ref local="workflowRepository" />
+		</property>
+		<property name="workflowNodeDescriptionRepository">
+			<ref local="workflowNodeDescriptionRepository" />
+		</property>
+		<property name="bidRepository">
+			<ref local="bidRepository" />
+		</property>
+		<property name="workflowNodeRepository">
+			<ref local="workflowNodeRepository" />
+		</property>
+	</bean>
+
+	<!-- Service Targets -->
+
+	<bean id="participantServiceTarget"
+		class="ar.com.trimatec.copre.services.impl.ParticipantServiceImpl"
+		parent="baseServiceImpl">
+	</bean>
+
+	<bean id="catalogServiceTarget" class="ar.com.trimatec.copre.services.impl.CatalogServiceImpl"
+		parent="baseServiceImpl">
+	</bean>
+
+	<bean id="requirementServiceTarget"
+		class="ar.com.trimatec.copre.services.impl.RequirementServiceImpl"
+		parent="baseServiceImpl">
+	</bean>
+	
+	<bean id="bidServiceTarget"
+		class="ar.com.trimatec.copre.services.impl.BidServiceImpl"
+		parent="baseServiceImpl">
+	</bean>
+
+
+	<!-- Transaction Manager -->
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+
+	<!-- SessionFactory -->
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="mappingResources">
+			<list>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Copre.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Participant.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Category.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Product.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Brand.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Measure.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Item.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Requirement.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/WorkflowDescription.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/WorkflowNodeDescription.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/WorkflowLinkDescription.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/WorkflowNode.hbm.xml
+				</value>
+				<value>
+					/ar/com/trimatec/copre/entities/maps/Bid.hbm.xml
+				</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="show_sql">
+					true
+				</prop>
+			</props>
+		</property>
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+
+	<!-- Services -->
+
+	<bean id="participantService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref local="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="participantServiceTarget" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="catalogService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref local="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="catalogServiceTarget" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="requirementService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref local="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="requirementServiceTarget" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="bidService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref local="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="bidServiceTarget" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+
+</beans>

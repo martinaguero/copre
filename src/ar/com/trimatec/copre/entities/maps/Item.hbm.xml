@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="ar.com.trimatec.copre.entities.maps">
+	<class name="ar.com.trimatec.copre.entities.Item" table="Item">
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+		<property name="quantity" column="quantity" type="java.lang.Integer" />
+		<many-to-one name="measure" class="ar.com.trimatec.copre.entities.Measure"
+			lazy="false" cascade="all">
+			<column name="measure_id" not-null="true" />
+		</many-to-one>
+		<many-to-one name="product" class="ar.com.trimatec.copre.entities.Product"
+			lazy="false" cascade="all">
+			<column name="product_id" not-null="true" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="ar.com.trimatec.copre.entities.maps">
+	<class name="ar.com.trimatec.copre.entities.WorkflowLinkDescription" table="WorkflowLinkDescription">
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+		<property name="title" column="title" type="java.lang.String" />
+		<many-to-one name="initialNodeDescription" class="ar.com.trimatec.copre.entities.WorkflowNodeDescription" cascade="all">
+            <column name="initial_node_description_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="finalNodeDescription" class="ar.com.trimatec.copre.entities.WorkflowNodeDescription" cascade="all">
+            <column name="final_node_description_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="workflowDescription" class="ar.com.trimatec.copre.entities.WorkflowDescription" cascade="all">
+            <column name="workflow_description_id" not-null="true" />
+        </many-to-one>
+	</class>
+</hibernate-mapping>

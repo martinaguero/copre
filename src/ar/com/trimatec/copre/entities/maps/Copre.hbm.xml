@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="ar.com.trimatec.copre.entities.maps">
+	<class name="ar.com.trimatec.copre.entities.Copre" table="Copre">
+		<id name="id" column="id" />
+		<set name="participants" table="Participant" lazy="true" cascade="all">
+			<key>
+				<column name="copre_id" not-null="true" />
+			</key>
+			<one-to-many class="ar.com.trimatec.copre.entities.Participant" />
+		</set>
+		<set name="categories" table="Category" lazy="true" cascade="all">
+			<key>
+				<column name="copre_id" not-null="true" />
+			</key>
+			<one-to-many class="ar.com.trimatec.copre.entities.Category" />
+		</set>
+		<set name="requirements" table="Requirement" lazy="true" cascade="all">
+			<key>
+				<column name="copre_id" not-null="true" />
+			</key>
+			<one-to-many class="ar.com.trimatec.copre.entities.Requirement" />
+		</set>
+		<set name="bids" table="Bid" lazy="true" cascade="all">
+			<key>
+				<column name="copre_id" not-null="true" />
+			</key>
+			<one-to-many class="ar.com.trimatec.copre.entities.Bid" />
+		</set>
+	</class>
+</hibernate-mapping>

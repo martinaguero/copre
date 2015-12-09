@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="ar.com.trimatec.copre.entities.maps">
+	<class name="ar.com.trimatec.copre.entities.Brand"
+		table="Brand">
+		<id name="id" column="id"
+			type="java.lang.Integer">
+			<generator class="identity" />
+		</id>	
+		<property name="name" column="name"
+			type="java.lang.String" />
+		</class>
+</hibernate-mapping>
