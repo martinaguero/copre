@@ -12,25 +12,25 @@
 	<h1>COPRE</h1>
 	<ul>
 		<li><a href="http://localhost:8080/copre">Home</a></li>
-		<li><a href="#">Alta</a>
+		<li><a href="#">New</a>
 			<ul>
-				<li><a href="./pages/newparticipant.jsf">Empresa</a></li>
-				<li><a href="./pages/newproduct.jsf">Producto</a></li>
+				<li><a href="./pages/newparticipant.jsf">Company</a></li>
+				<li><a href="./pages/newproduct.jsf">Product</a></li>
 			</ul></li>
-		<li><a href="#">Requerimientos</a>
+		<li><a href="#">Requirements</a>
 			<ul>
-				<li><a href="./pages/newrequirement-category.jsf">Nuevo</a></li>
+				<li><a href="./pages/newrequirement-category.jsf">New</a></li>
 			</ul></li>
-		<li><a href="#">Ofertas</a>
+		<li><a href="#">Bids</a>
 			<ul>
-				<li><a href="./pages/newbid-listrequirements.jsf">Nueva</a></li>
-				<li><a href="./pages/bidadmin.jsf">Administrar</a></li>
+				<li><a href="./pages/newbid-listrequirements.jsf">New</a></li>
+				<li><a href="./pages/bidadmin.jsf">Management</a></li>
 			</ul></li>
-		<li><a href="#">Historial</a>
+		<li><a href="#">Records</a>
 			<ul>
-				<li><a href="./pages/requirement-history.jsf">Requerimiento</a></li>
+				<li><a href="./pages/requirement-history.jsf">Requirement</a></li>
 			</ul></li>
-		<li><a href="./pages/author.jsf">Autor</a></li>
+		<li><a href="./pages/author.jsf">Author</a></li>
 	</ul>
 
 </body>
