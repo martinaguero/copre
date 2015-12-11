@@ -7,7 +7,7 @@ See more at [Wikipedia].
 ### version
 1.0 (February 26, 2014)
 
-### web app (very basic user interface)
+### demo (very basic user interface)
 http://trimatek.org/copre
 
 ### data model design
