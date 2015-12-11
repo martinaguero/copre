@@ -1,4 +1,4 @@
-# copre
+# COPRE
 **Reverse auction**
 
 A reverse auction is a type of auction in which the roles of buyer and seller are reversed. In an ordinary auction (also known as a forward auction), buyers compete to obtain a good or service by offering increasingly higher prices. In a reverse auction, the sellers compete to obtain business from the buyer and prices will typically decrease as the sellers undercut each other.
@@ -11,7 +11,7 @@ See more at [Wikipedia].
 http://trimatek.org/copre
 
 ### data model design
-[Persistencia Orientada a Objetos], Javier Bazzocco, UNLP
+Under recommendations of: [Persistencia Orientada a Objetos], Javier Bazzocco, UNLP
 
 ### technology
 * MySql 5.5
