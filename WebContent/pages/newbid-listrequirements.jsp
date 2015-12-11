@@ -24,7 +24,7 @@
 			<h:dataTable id="items" value="#{bidBean.items}" var="item">
 				<h:column>
 					<f:facet name="header">
-						<h:outputText value="#{msg.product}" />
+						<h:outputText value="#{msg.id}" />
 					</f:facet>
 					<h:outputText value="#{item.id}" />
 				</h:column>

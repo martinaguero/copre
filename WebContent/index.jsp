@@ -11,7 +11,7 @@
 <body>
 	<h1>COPRE</h1>
 	<ul>
-		<li><a href="http://localhost:8080/copre">Home</a></li>
+		<li><a href="http://trimatek.org/copre">Home</a></li>
 		<li><a href="#">New</a>
 			<ul>
 				<li><a href="./pages/newparticipant.jsf">Company</a></li>
