@@ -5,9 +5,9 @@ A reverse auction is a type of auction in which the roles of buyer and seller ar
 See more at [Wikipedia].
 
 ### version
-1.0 (February 26 2014)
+1.0 (February 26, 2014)
 
-### web app (basic user interface)
+### web app (very basic user interface)
 http://trimatek.org/copre
 
 ### data model design
@@ -23,8 +23,8 @@ Under recommendations of [Persistencia Orientada a Objetos], Javier Bazzocco, UN
 * JSF 1.1
 
 ### documentation
-[scope] Basic description and scope (in spanish)
-[design] Design (in spanish)
+- [scope] Basic description and scope (in spanish)
+- [design] Design (in spanish)
 
 ### author
 Martín Agüero is professor at [Universidad de Palermo] located in Buenos Aires, Argentina
