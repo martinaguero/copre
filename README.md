@@ -23,8 +23,8 @@ Under recommendations of [Persistencia Orientada a Objetos], Javier Bazzocco, UN
 * JSF 1.1
 
 ### documentation
-- [scope] Basic description and scope (in spanish)
-- [design] Design (in spanish)
+- Basic description and scope (in spanish): [scope]
+- Design (in spanish): [design]
 
 ### author
 Martín Agüero is professor at [Universidad de Palermo] located in Buenos Aires, Argentina
