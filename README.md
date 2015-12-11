@@ -11,7 +11,7 @@ See more at [Wikipedia].
 http://trimatek.org/copre
 
 ### data model design
-Under recommendations of [Persistencia Orientada a Objetos], Javier Bazzocco, UNLP, 2011
+Transitive persistence design under recommendations at [Persistencia Orientada a Objetos], Javier Bazzocco, UNLP, 2011
 
 ### class design model
 ![alt text](https://github.com/martinaguero/copre/blob/master/diagrama-copre.jpg "Class design model")
