@@ -23,8 +23,8 @@ Under recommendations of [Persistencia Orientada a Objetos], Javier Bazzocco, UN
 * JSF 1.1
 
 ### documentation
-- Basic description and scope (in spanish): [scope]
-- Design (in spanish): [design]
+- Basic description and scope (in spanish): [objetivo-alcance.pdf]
+- Design (in spanish): [documentacion.pdf]
 
 ### author
 Martín Agüero is professor at [Universidad de Palermo] located in Buenos Aires, Argentina
@@ -36,5 +36,5 @@ Questions, issues or suggestions are welcome at `aguero.martin@gmail.com`
 [this]:http://www.objectmentor.com/resources/articles/oodmetrc.pdf
 [Persistencia Orientada a Objetos]:http://catalogo.info.unlp.edu.ar/meran/getDocument.pl?id=377
 [Wikipedia]:https://en.wikipedia.org/wiki/Reverse_auction
-[scope]:https://github.com/martinaguero/copre/blob/master/doc/objetivo-alcance.pdf
-[design]:https://github.com/martinaguero/copre/blob/master/doc/documentaci%C3%B3n.pdf
+[objetivo-alcance.pdf]:https://github.com/martinaguero/copre/blob/master/doc/objetivo-alcance.pdf
+[documentacion.pdf]:https://github.com/martinaguero/copre/blob/master/doc/documentaci%C3%B3n.pdf
