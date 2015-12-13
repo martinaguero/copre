@@ -7,7 +7,8 @@ See more at [Wikipedia].
 ### version
 1.0 (February 26, 2014)
 
-### demo (very basic user interface)
+### demo 
+(very basic user interface)
 http://trimatek.org/copre
 
 ### data model design
@@ -36,5 +37,5 @@ Questions, issues or suggestions are welcome at `aguero.martin@gmail.com`
 [this]:http://www.objectmentor.com/resources/articles/oodmetrc.pdf
 [Persistencia Orientada a Objetos]:http://catalogo.info.unlp.edu.ar/meran/getDocument.pl?id=377
 [Wikipedia]:https://en.wikipedia.org/wiki/Reverse_auction
-[objetivo-alcance.pdf]:https://github.com/martinaguero/copre/blob/master/doc/objetivo-alcance.pdf
-[documentacion.pdf]:https://github.com/martinaguero/copre/blob/master/doc/documentaci%C3%B3n.pdf
+[objetivo-alcance.pdf]:https://dl.dropboxusercontent.com/u/13410677/copre/objetivo-alcance.pdf
+[documentacion.pdf]:https://dl.dropboxusercontent.com/u/13410677/copre/documentaci%C3%B3n.pdf
