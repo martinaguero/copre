@@ -25,7 +25,7 @@
 		<li><a href="#">Bids</a>
 			<ul>
 				<li><a href="./pages/newbid-listrequirements.jsf">New</a></li>
-				<li><a href="./pages/bidadmin.jsf">Management</a></li>
+				<li><a href="./pages/bidadmin.jsf">Manage</a></li>
 			</ul></li>
 		<li><a href="#">Records</a>
 			<ul>
