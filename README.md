@@ -28,12 +28,12 @@ Transitive persistence design under recommendations at [Persistencia Orientada a
 - Design (in spanish): [documentacion.pdf]
 
 ### author
-[Martín Agüero] is professor at Universidad de Palermo
+Martín Agüero is professor at [Universidad Tecnol�gica Nacional] Facultad Regional Buenos Aires, Argentina.
 
 ### contact
 Questions, issues or suggestions are welcome at `aguero.martin@gmail.com`
 
-[Universidad de Palermo]: http://www.palermo.edu
+[Universidad Tecnol�gica Nacional]: http://www.utn.edu.ar/
 [this]:http://www.objectmentor.com/resources/articles/oodmetrc.pdf
 [Persistencia Orientada a Objetos]:http://catalogo.info.unlp.edu.ar/meran/getDocument.pl?id=377
 [Wikipedia]:https://en.wikipedia.org/wiki/Reverse_auction
