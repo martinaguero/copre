@@ -28,7 +28,7 @@ Transitive persistence design under recommendations at [Persistencia Orientada a
 - Design (in spanish): [documentacion.pdf]
 
 ### author
-MartÃ­n AgÃ¼ero is professor at [Universidad Tecnológica Nacional] Facultad Regional Buenos Aires, Argentina.
+Martín Agüero is professor at [Universidad Tecnológica Nacional] Facultad Regional Buenos Aires, Argentina.
 
 ### contact
 Questions, issues or suggestions are welcome at `aguero.martin@gmail.com`
