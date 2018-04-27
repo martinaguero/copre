@@ -7,10 +7,6 @@ See more at [Wikipedia].
 ### version
 1.0 (February 26, 2014)
 
-### demo 
-(very basic user interface)
-http://trimatek.org/copre
-
 ### data model design
 Transitive persistence design under recommendations at [Persistencia Orientada a Objetos], Javier Bazzocco, UNLP, 2011
 
@@ -27,16 +23,13 @@ Transitive persistence design under recommendations at [Persistencia Orientada a
 - Basic description and scope (in spanish): [objetivo-alcance.pdf]
 - Design (in spanish): [documentacion.pdf]
 
-### author
-Martín Agüero is professor at [Universidad Tecnológica Nacional] Facultad Regional Buenos Aires, Argentina.
-
 ### contact
 Questions, issues or suggestions are welcome at `aguero.martin@gmail.com`
 
-[Universidad Tecnológica Nacional]: http://www.utn.edu.ar/
+[Universidad TecnolÃ³gica Nacional]: http://www.utn.edu.ar/
 [this]:http://www.objectmentor.com/resources/articles/oodmetrc.pdf
 [Persistencia Orientada a Objetos]:http://catalogo.info.unlp.edu.ar/meran/getDocument.pl?id=377
 [Wikipedia]:https://en.wikipedia.org/wiki/Reverse_auction
 [objetivo-alcance.pdf]:https://dl.dropboxusercontent.com/u/13410677/copre/objetivo-alcance.pdf
 [documentacion.pdf]:https://dl.dropboxusercontent.com/u/13410677/copre/documentaci%C3%B3n.pdf
-[MartÃ­n AgÃ¼ero]:https://ar.linkedin.com/in/martinaguero
+[MartÃƒÂ­n AgÃƒÂ¼ero]:https://ar.linkedin.com/in/martinaguero
